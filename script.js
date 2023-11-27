@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const cidadeElemento = document.getElementById('cidade');
         const temperaturaElemento = document.getElementById('temperatura');
         const condicaoElemento = document.getElementById('condicao');
+        const ultimaAtualizacaoElemento = document.getElementById('ultima-atualizacao');
 
         cidadeElemento.textContent = `Cidade: ${dados.name}`;
 
@@ -29,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         temperaturaElemento.textContent = `Temperatura: ${temperaturaCelsius}°C`;
         condicaoElemento.textContent = `Condição: ${condicaoComPrimeiraLetraMaiuscula}`;
+
+        const ultimaAtualizacao = new Date();
+        const options = { month:'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'};
+        ultimaAtualizacaoElemento.textContent = `Atualizado: ${ultimaAtualizacao.toLocaleDateString('pt-BR', options)}`;
     }
 
     obterLocalizacao() 

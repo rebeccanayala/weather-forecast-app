@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,500;0,6..12,600;0,6..12,800;1,6..12,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,500;0,6..12,600;0,6..12,800;1,6..12,200;1,6..12,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -36,6 +36,12 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#ultima-atualizacao {
+    font-weight: 200;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+}
 
 .credits {
     color: #5d6870;
