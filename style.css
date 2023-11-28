@@ -57,3 +57,14 @@ h1 {
 .credits a:hover {
     text-decoration: underline;
 }
+
+/* mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .weather-container {
+        padding: 10px;
+    }
+}
